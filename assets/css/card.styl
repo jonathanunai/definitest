@@ -1,0 +1,123 @@
+@import "~rupture/rupture/index.styl";
+@import "~assets/css/config.styl";
+
+.testcard
+  width card-width
+  height card-height
+  position absolute
+  top 50%
+  left 50%
+  margin: -250px 0 0 -175px
+  overflow: hidden
+  border-radius: 10px
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .5)
+  text-align: center
+  background-color mygrey
+  padding 10px 20px
+  transition: all 0.25s ease-in-out;
+  a
+    display: inline-block
+    border-radius: 4px
+    border: 1px solid grey
+    color: black
+    text-decoration: none
+    padding: 10px 30px
+    margin: 0 8px
+    background-color myyellow
+    cursor pointer
+  a:hover
+    background-color: myyellower
+  .nuxt-link-exact-active
+    color #fff !important
+  h3
+    font-size: 20px
+    font-weight: 500
+    letter-spacing: 1.1px
+    font-family: 'Roboto', sans-serif
+    margin-bottom: 0
+    padding 2px
+    color txt-color
+  hr
+    width: 50px
+    height: 3px
+    margin: 20px auto
+    border: 0
+    background: myyellow
+    bottom 0
+
+  .questions-wrapper
+    display flex
+    justify-content space-between
+    flex-direction column
+    height 100%
+    z-index 20
+  .questions-wrapper > *
+    z-index 25
+  .questions-main
+    flex 1
+
+  .gradient-overlay
+    /* bg-gradient: */
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+    background-image: -moz-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+    background-image: -o-linear-gradient(rgba(0,0,0,0.00) 0%, rgba(0,0,0,.6) 21%);
+    background-image: linear-gradient(rgba(0,0,0,.99) 0%, rgba(0,0,0,.7) 10%, rgba(0,0,0,0.00) 34%);
+    width: card-width;
+    height: card-height;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 15;
+  .color-overlay
+    background: rgba(84,104,110,0.4)
+    width: card-width;
+    height: card-height;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: background .3s cubic-bezier(.33,.66,.66,1);
+  ul
+    padding 18px
+    display flex
+    justify-content space-between
+    flex-direction column
+
+    li
+      padding: 6px 6px 6px 10px;
+      cursor: pointer;
+      background: txt-color;
+      margin: 6px 6px 6px 16px;
+      font-size: 1.2em;
+      transition: all 0.25s ease-in-out;
+      border-radius 30px
+      list-style-type none
+    li:hover
+      background: myyellow;
+      transition: all 0.25s ease-in-out;
+  .highlight
+    background: green;
+    color txt-color
+  .questions-footer
+    display flex
+    justify-content space-between
+  .questions-header
+    min-height 110px
+  .status
+    vertical-align middle
+    margin auto
+    color txt-color
+    font-size 0.7em
+  .questions-header-inner
+    margin-top 0px
+    transition: margin-top 0.2s ease-in-out, opacity 0.2s ease-in-out, ;
+  .in-transition
+    margin-top -100px
+    opacity 0.1
+    transition: margin-top 0.6s ease-in-out, opacity 0.7s ease-in-out, ;
+  .in-transition-answers
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    transition: transform 0.2s ease-in-out;
+
